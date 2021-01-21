@@ -7,20 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D103CB0225B9F0AA00401989 /* Template_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = D103CB0025B9F0AA00401989 /* Template_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D103CB1125B9F0BF00401989 /* Template_WatchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = D103CB0F25B9F0BF00401989 /* Template_WatchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D103CB1D25B9F44C00401989 /* Template.h in Headers */ = {isa = PBXBuildFile; fileRef = D103CB1C25B9F43D00401989 /* Template.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D103CB2025B9F44C00401989 /* Template.h in Headers */ = {isa = PBXBuildFile; fileRef = D103CB1C25B9F43D00401989 /* Template.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D103CB2825B9F48B00401989 /* MyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D103CB2725B9F48B00401989 /* MyClass.swift */; };
+		D103CB2925B9F48B00401989 /* MyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D103CB2725B9F48B00401989 /* MyClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D103CAC525B9EFDD00401989 /* MultiPlatformTemplateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiPlatformTemplateApp.swift; sourceTree = "<group>"; };
-		D103CAC625B9EFDD00401989 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		D103CAC725B9EFE100401989 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D103CAFE25B9F0AA00401989 /* Template_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Template_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D103CB0025B9F0AA00401989 /* Template_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Template_iOS.h; sourceTree = "<group>"; };
-		D103CB0125B9F0AA00401989 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D103CB0D25B9F0BF00401989 /* Template_WatchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Template_WatchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D103CB0F25B9F0BF00401989 /* Template_WatchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Template_WatchOS.h; sourceTree = "<group>"; };
-		D103CB1025B9F0BF00401989 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D103CAFE25B9F0AA00401989 /* MultiPlatformTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MultiPlatformTemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D103CB0D25B9F0BF00401989 /* MultiPlatformTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MultiPlatformTemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D103CB1625B9F31200401989 /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
+		D103CB1725B9F31200401989 /* Info-WatchOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-WatchOS.plist"; sourceTree = "<group>"; };
+		D103CB1C25B9F43D00401989 /* Template.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Template.h; sourceTree = "<group>"; };
+		D103CB2725B9F48B00401989 /* MyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,48 +43,29 @@
 		D103CABF25B9EFDC00401989 = {
 			isa = PBXGroup;
 			children = (
-				D103CAC425B9EFDD00401989 /* Shared */,
-				D103CAFF25B9F0AA00401989 /* Template iOS */,
-				D103CB0E25B9F0BF00401989 /* Template WatchOS */,
+				D103CAC425B9EFDD00401989 /* Sources */,
 				D103CACD25B9EFE100401989 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D103CAC425B9EFDD00401989 /* Shared */ = {
+		D103CAC425B9EFDD00401989 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				D103CAC525B9EFDD00401989 /* MultiPlatformTemplateApp.swift */,
-				D103CAC625B9EFDD00401989 /* ContentView.swift */,
-				D103CAC725B9EFE100401989 /* Assets.xcassets */,
+				D103CB1C25B9F43D00401989 /* Template.h */,
+				D103CB1625B9F31200401989 /* Info-iOS.plist */,
+				D103CB1725B9F31200401989 /* Info-WatchOS.plist */,
+				D103CB2725B9F48B00401989 /* MyClass.swift */,
 			);
-			path = Shared;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		D103CACD25B9EFE100401989 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D103CAFE25B9F0AA00401989 /* Template_iOS.framework */,
-				D103CB0D25B9F0BF00401989 /* Template_WatchOS.framework */,
+				D103CAFE25B9F0AA00401989 /* MultiPlatformTemplate.framework */,
+				D103CB0D25B9F0BF00401989 /* MultiPlatformTemplate.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		D103CAFF25B9F0AA00401989 /* Template iOS */ = {
-			isa = PBXGroup;
-			children = (
-				D103CB0025B9F0AA00401989 /* Template_iOS.h */,
-				D103CB0125B9F0AA00401989 /* Info.plist */,
-			);
-			path = "Template iOS";
-			sourceTree = "<group>";
-		};
-		D103CB0E25B9F0BF00401989 /* Template WatchOS */ = {
-			isa = PBXGroup;
-			children = (
-				D103CB0F25B9F0BF00401989 /* Template_WatchOS.h */,
-				D103CB1025B9F0BF00401989 /* Info.plist */,
-			);
-			path = "Template WatchOS";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,7 +75,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D103CB0225B9F0AA00401989 /* Template_iOS.h in Headers */,
+				D103CB1D25B9F44C00401989 /* Template.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +83,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D103CB1125B9F0BF00401989 /* Template_WatchOS.h in Headers */,
+				D103CB2025B9F44C00401989 /* Template.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,7 +105,7 @@
 			);
 			name = "Template iOS";
 			productName = "Template iOS";
-			productReference = D103CAFE25B9F0AA00401989 /* Template_iOS.framework */;
+			productReference = D103CAFE25B9F0AA00401989 /* MultiPlatformTemplate.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D103CB0C25B9F0BF00401989 /* Template WatchOS */ = {
@@ -143,7 +123,7 @@
 			);
 			name = "Template WatchOS";
 			productName = "Template WatchOS";
-			productReference = D103CB0D25B9F0BF00401989 /* Template_WatchOS.framework */;
+			productReference = D103CB0D25B9F0BF00401989 /* MultiPlatformTemplate.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -157,9 +137,11 @@
 				TargetAttributes = {
 					D103CAFD25B9F0AA00401989 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 					D103CB0C25B9F0BF00401989 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 				};
 			};
@@ -204,6 +186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D103CB2825B9F48B00401989 /* MyClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D103CB2925B9F48B00401989 /* MyClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +255,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -323,6 +308,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
@@ -331,6 +317,7 @@
 		D103CB0425B9F0AA00401989 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -338,7 +325,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Template iOS/Info.plist";
+				INFOPLIST_FILE = "Sources/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -346,10 +333,11 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kyledold.Template-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kyledold.$(PROJECT_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -360,6 +348,7 @@
 		D103CB0525B9F0AA00401989 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -367,7 +356,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Template iOS/Info.plist";
+				INFOPLIST_FILE = "Sources/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -375,8 +364,8 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kyledold.Template-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kyledold.$(PROJECT_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -391,6 +380,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -398,17 +388,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Template WatchOS/Info.plist";
+				INFOPLIST_FILE = "Sources/Info-WatchOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kyledold.Template-WatchOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kyledold.$(PROJECT_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -421,6 +412,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -428,15 +420,15 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Template WatchOS/Info.plist";
+				INFOPLIST_FILE = "Sources/Info-WatchOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kyledold.Template-WatchOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kyledold.$(PROJECT_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
